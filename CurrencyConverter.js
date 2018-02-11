@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import ToggleButton from './ToggleButton';
+// import ToggleButton from './ToggleButton';
 
 const styles = StyleSheet.create({
     rootViewStyle: {
@@ -67,7 +67,7 @@ export default class CurrencyConverter extends React.Component {
                         <Text style={styles.targetCurrencyValue}>16K</Text>
                         <Text style={styles.targetCurrencySymbol}>Russian Ruble</Text>
                     </View>
-                    <ToggleButton></ToggleButton>
+                    {/* <ToggleButton></ToggleButton> */}
             </View>
 
         );

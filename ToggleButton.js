@@ -11,5 +11,5 @@ const ToggleButton = () => (
       </View>
     </TouchableNativeFeedback>
   );
-);
+
 export default TouchableOpacity;
