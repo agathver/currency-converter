@@ -58,14 +58,14 @@ export default class CurrencyConverter extends React.Component {
         return (
             <View style={styles.rootViewStyle}>
                 <View style={styles.topViewStyle}>
-                    <Text style={styles.currencyLabel}>US Dollar</Text>
+                    <Text style={styles.currencyLabel}  onPress={()=> this.props.navigation.navigate('CurrencyList')}>US Dollar</Text>
                     <Text style={styles.currencyValue}>271 $</Text>
                     <Text style={styles.currencySymbol}>USD</Text>
                 </View>
                     <View style={styles.bottomViewStyle}>
                         <Text style={styles.targetCurrencyLabel}>RUB</Text>
                         <Text style={styles.targetCurrencyValue}>16K</Text>
-                        <Text style={styles.targetCurrencySymbol}>Russian Ruble</Text>
+                        <Text style={styles.targetCurrencySymbol} onPress={()=> this.props.navigation.navigate('CurrencyList')}>Russian Ruble</Text>
                     </View>
                     {/* <ToggleButton></ToggleButton> */}
             </View>

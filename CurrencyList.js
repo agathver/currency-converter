@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
-
+import { Text, StyleSheet, SafeAreaView } from 'react-native';
+import currencies from './currencies.json';
 const styles = StyleSheet.create({
     root: {
         display: 'flex',
@@ -9,20 +9,17 @@ const styles = StyleSheet.create({
         color: '#FF4F4F',
         alignItems: 'center',
         justifyContent: 'center',
-        fontSize: 45
+        fontSize: 24
     }
 });
 export default class CurrencyList extends React.Component {
     render() {
         return (
-            <View>
-                <Text style={styles.root}>Britain Pound</Text>
-                <Text style={styles.root}>Bitcoin</Text>
-                <Text style={styles.root}>Belarusian Ruble</Text>
-                <Text style={styles.root}>Albanian Lek</Text>
-                <Text style={styles.root}>Argentine Peso</Text>
-                <Text style={styles.root}>Armenian Dram</Text>
-            </View>
+            <SafeAreaView>
+                {currencies.map(currency => (
+                    <Text key={currency.id} style={styles.root}>{currency.name}</Text>
+                ))}
+            </SafeAreaView>
         );
 
     }

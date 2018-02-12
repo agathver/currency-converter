@@ -5,6 +5,8 @@ import CurrencyList from './CurrencyList';
 const Root = StackNavigator({
   Home: { screen: CurrencyConverter },
   CurrencyList: { screen: CurrencyList },
+},{
+  headerMode:'none',
 });
 
 export default Root;
