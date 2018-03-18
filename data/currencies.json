@@ -1,0 +1,17 @@
+[
+  {
+    "name": "US Dollar",
+    "id": "USD",
+    "symbol": "$"
+  },
+  {
+    "name": "Euro",
+    "id": "EUR",
+    "symbol": "€ "
+  },
+  {
+    "name": "Indian Rupee",
+    "id": "INR",
+    "symbol": "₹"
+  }
+]
